@@ -30,6 +30,7 @@ public class Reiknivel {
         int tala1 = Integer.parseInt(nr1);
         int tala2 = Integer.parseInt(nuverandi);
 
+
         switch (reikniadferd) {
             case "+" -> {
                 int utkoma1 = tala1 + tala2;
@@ -56,6 +57,54 @@ public class Reiknivel {
         }
     }
 
+    @FXML
+    void plus(ActionEvent event) {
+        int tala1 = Integer.parseInt(nr1);
+        int tala2 = Integer.parseInt(nuverandi);
+
+        int utkoma1 = tala1 + tala2;
+        geymatolur.setText(nr1 + " + " + nuverandi + " = " + utkoma1);
+        lausnargluggi.setText(String.valueOf(utkoma1));
+        
+    }
+
+    @FXML
+    void minus(ActionEvent event) {
+        int tala1 = Integer.parseInt(nr1);
+        int tala2 = Integer.parseInt(nuverandi);
+
+        int utkoma1 = tala1 - tala2;
+        geymatolur.setText(nr1 + " - " + nuverandi + " = " + utkoma1);
+        lausnargluggi.setText(String.valueOf(utkoma1));
+
+    }
+
+    //multiplication
+    @FXML
+    void multiplication(ActionEvent event) {
+        int tala1 = Integer.parseInt(nr1);
+        int tala2 = Integer.parseInt(nuverandi);
+
+        int utkoma1 = tala1 * tala2;
+        geymatolur.setText(nr1 + " * " + nuverandi + " = " + utkoma1);
+        lausnargluggi.setText(String.valueOf(utkoma1));
+
+    }
+
+    @FXML
+    void divide(ActionEvent event) {
+        int tala1 = Integer.parseInt(nr1);
+        int tala2 = Integer.parseInt(nuverandi);
+        if (tala2 == 0) {
+            lausnargluggi.setText("Division by zero!");
+        } else {
+            int utkoma1 = tala1 / tala2;
+            geymatolur.setText(nr1 + " / " + nuverandi + " = " + utkoma1);
+            lausnargluggi.setText(String.valueOf(utkoma1));
+        }
+    }
+
+
     public void lausn() {
         lausnargluggi.setText(nuverandi);
     }
@@ -71,4 +120,6 @@ public class Reiknivel {
         lausnargluggi.setText("");
         geymatolur.setText("");
     }
+
+
 }

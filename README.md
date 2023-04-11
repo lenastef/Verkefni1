@@ -1,4 +1,4 @@
-# Verkefni1 Reiknivel
+# Verkefni1 Reiknivél
 
 A very simple implementation of a calculator for general use for integer numbers to be tested using JUnit4.
 
