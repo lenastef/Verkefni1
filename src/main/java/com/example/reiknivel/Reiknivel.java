@@ -57,6 +57,8 @@ public class Reiknivel {
         }
     }
 
+
+/*
     @FXML
     void plus(ActionEvent event) {
         int tala1 = Integer.parseInt(nr1);
@@ -65,7 +67,7 @@ public class Reiknivel {
         int utkoma1 = tala1 + tala2;
         geymatolur.setText(nr1 + " + " + nuverandi + " = " + utkoma1);
         lausnargluggi.setText(String.valueOf(utkoma1));
-        
+
     }
 
     @FXML
@@ -79,7 +81,7 @@ public class Reiknivel {
 
     }
 
-    //multiplication
+
     @FXML
     void multiplication(ActionEvent event) {
         int tala1 = Integer.parseInt(nr1);
@@ -104,6 +106,7 @@ public class Reiknivel {
         }
     }
 
+ */
 
     public void lausn() {
         lausnargluggi.setText(nuverandi);
