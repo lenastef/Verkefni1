@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.*?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+            prefWidth="300.0" style="-fx-background-color: pink; -fx-border-color: #6324ab;"
+            xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="com.example.reiknivel.ReiknivelController">
+    <children>
+        <TextField fx:id="lausnargluggi" editable="false" layoutX="20.0" layoutY="18.0" nodeOrientation="RIGHT_TO_LEFT"
+                   prefHeight="94.0" prefWidth="258.0" style="-fx-border-color: #6324ab;" text="0">
+            <font>
+                <Font name="Arial" size="40.0"/>
+            </font>
+        </TextField>
+        <FlowPane layoutX="25.0" layoutY="125.0" prefHeight="180.0" prefWidth="180.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#ytaa1" prefHeight="60.0" prefWidth="60.0"
+                        style="-fx-background-color: violet; -fx-border-color: #6324ab;" text="1" textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#ytaa2" prefHeight="60.0"
+                        prefWidth="60.0" style="-fx-background-color: violet; -fx-border-color: #6324ab;" text="2"
+                        textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="70.0" layoutY="10.0" mnemonicParsing="false" onAction="#ytaa3" prefHeight="60.0"
+                        prefWidth="60.0" style="-fx-background-color: violet; -fx-border-color: #6324ab;" text="3"
+                        textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="130.0" layoutY="10.0" mnemonicParsing="false" onAction="#ytaa4" prefHeight="60.0"
+                        prefWidth="60.0" style="-fx-background-color: violet;-fx-border-color: #6324ab;" text="4"
+                        textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#ytaa5" prefHeight="60.0"
+                        prefWidth="60.0" style="-fx-background-color: violet;-fx-border-color: #6324ab;" text="5"
+                        textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="70.0" layoutY="70.0" mnemonicParsing="false" onAction="#ytaa6" prefHeight="60.0"
+                        prefWidth="60.0" style="-fx-background-color: violet;-fx-border-color:#6324ab;" text="6"
+                        textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="130.0" layoutY="70.0" mnemonicParsing="false" onAction="#ytaa7" prefHeight="60.0"
+                        prefWidth="60.0" style="-fx-background-color: violet;-fx-border-color:#6324ab;" text="7"
+                        textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="130.0" mnemonicParsing="false" onAction="#ytaa8" prefHeight="60.0"
+                        prefWidth="60.0" style="-fx-background-color: violet;-fx-border-color: #6324ab;" text="8"
+                        textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="70.0" layoutY="130.0" mnemonicParsing="false" onAction="#ytaa9" prefHeight="60.0"
+                        prefWidth="60.0" style="-fx-background-color: violet;-fx-border-color: #6324ab;" text="9"
+                        textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="70.0" layoutY="10.0" mnemonicParsing="false" onAction="#ytaa0" prefHeight="60.0"
+                        prefWidth="60.0" style="-fx-background-color: violet;-fx-border-color: #6324ab;" text="0"
+                        textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#hreinsa" prefHeight="60.0" prefWidth="60.0"
+                        style="-fx-background-color: violet;-fx-border-color: #6324ab;" text="C" textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button mnemonicParsing="false" onAction="#reikna" prefHeight="60.0" prefWidth="60.0"
+                        style="-fx-background-color: violet;-fx-border-color: #6324ab;" text="=" textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+            </children>
+        </FlowPane>
+        <VBox layoutX="215.0" layoutY="125.0" prefHeight="240.0" prefWidth="60.0">
+            <children>
+                <Button mnemonicParsing="false" onAction="#plusa" prefHeight="60.0" prefWidth="60.0"
+                        style="-fx-background-color: violet;-fx-border-color: #6324ab;" text="+" textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="70.0" mnemonicParsing="false" onAction="#minusa" prefHeight="60.0"
+                        prefWidth="60.0" style="-fx-background-color: violet;-fx-border-color: #6324ab;" text="-"
+                        textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="130.0" mnemonicParsing="false" onAction="#deiling" prefHeight="60.0"
+                        prefWidth="60.0" style="-fx-background-color: violet;-fx-border-color:#6324ab;" text="/"
+                        textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+                <Button layoutX="10.0" layoutY="172.0" mnemonicParsing="false" onAction="#margfoldun" prefHeight="60.0"
+                        prefWidth="60.0" style="-fx-background-color: violet;-fx-border-color: #6324ab;" text="*"
+                        textFill="#6324ab">
+                    <font>
+                        <Font size="25.0"/>
+                    </font>
+                </Button>
+            </children>
+        </VBox>
+        <Text fx:id="geymatolur" layoutX="30.0" layoutY="30.0" strokeType="OUTSIDE" strokeWidth="0.0"/>
+    </children>
+</AnchorPane>
